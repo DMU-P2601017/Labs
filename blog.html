@@ -7,6 +7,13 @@
   </head>
   <body>
     <h1 style="color: yellow; background-color: darkorange;">Sunshine</h1>
+    
+    <!-- ***
+         This <img> element is telling the browser to look in a folder called 'images', where it will find sun.jpg. 
+         On GitHub though, you've not put it in a folder, so this url won't work. 
+         You should either put sun.jpg in a folder called images, or update the src value
+         *** -->
+    
     <!-- resourse of the picture of sun - pinterest -->
   <img src="images/sun.jpg">
     <p>
@@ -23,8 +30,48 @@
     <h2 style="color: red">But how is it related to your topic then?</h2>
     <p> That's a good question. I have no idea, but I can tell you about
       my hair and how they are related to the topic.
+      
+      <!-- ***
+           You've not closed the paragraph above, so the <h3>, <ol> and <h2> below are actually inside the <p>
+           *** -->
       <h3>Because they're the reason,
       why people called me sunshine.</h3>
+    
+      <!-- ***
+           Your lists are a little wrong. There are two types of lists:
+            - ordered i.e. numbered, lettered etc. These us an <ol> element
+            - unordered i.e. bulleted. These us a <ul> element.
+
+           In either case, the list starts with the opening tag, and ends with the closing tag:
+            <ol>
+            </ol>
+
+           You then add list items <li> inside the list element.
+
+          <ol>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ol>
+
+          You can have sub-lists by embedding lists inside eachother. 
+
+          These sub-lists still need to be inside a list item though:
+
+          <ul>
+            <li>Coffee</li>
+            <li>Tea
+              <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+              </ul>
+            </li>
+            <li>Milk</li>
+          </ul>
+
+          In light of this, your use of the list elements is a little off.
+          *** -->
+    
       <ol>
         <li>They are curly and messy.</li>
         <ul>
@@ -48,6 +95,9 @@ I also think it's because I hate being depressed.</p>
 <h2 style="color: red">I think that everybody hates feeling depressed.</h2>
 <p>I know right. That is why I am sharing here few of my favourite channels and videos
   to watch on youtube.
+  <!-- ***
+       You've not closed this <p> either
+       *** -->
   <ol>
     <li>Let's Game It Out
       <ul> "https://youtu.be/0Axt48Gngu4"</ul>
