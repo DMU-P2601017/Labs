@@ -1,0 +1,45 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  animation: bgcolor infinite 20s
+
+}
+
+@keyframes bgcolor{
+  O%
+  {
+    background: indianred;
+  }
+  20%
+  {
+    background: lightcoral;
+  }
+  40%
+  {
+    background: lightsalmon;
+  }
+  60%
+  {
+    background: orange;
+  }
+  80%
+  {
+    background: sandybrown;
+  }
+  100%
+  {
+    background: peru;
+  }
+}
+*{  box-sizing: border-box;
+}
+.column {
+  float:left;
+  width: 14.2857143%;
+  padding: 5px;
+}
+
+video {
+  width: 75%;
+}
