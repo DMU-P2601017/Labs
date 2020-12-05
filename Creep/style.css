@@ -1,0 +1,119 @@
+header {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+}
+/* Here I started with styling the header, where I put the text in center,
+did the size of the framing box (margin and padding) and set the colour.*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+  font-family: Helvetica; sans-serif; Ariel;
+}
+/* In this element I set up framing box like in header, but put everything on 0.
+I picked my color for background from color picker on https://www.w3schools.com/.
+I also set up font which I picked with help of Microsoft Word with another 2 fonts,
+if the first one won't work.*/
+
+h2 {
+  text-align: center;
+  margin: 50px 0px;
+  font-size: 25px;
+  color: #ffd633;
+}
+/* This is the setting for all headings size 2 in my pages. They sit in the center,
+have frame of 50px. Size of the font is set on 25 px and color was again picked from
+the website stated above*/
+h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #e68c4d;
+/* Headings of size 3 are all in the center, have size of 20px and specific orange color.*/
+}
+p {
+  color: #e6ffff;
+  text-align: center;
+  padding: 0 20px;
+}
+/* Here I styled my text in paragraphs, where the color I picked from the website, text
+sits in the center of the page and "space" around the text have 20px.*/
+.float {
+  width: 50%;
+  float: left;
+}
+/* This div class section is used to make my content sit on the left
+side and should take only 50% of my page*/
+section::after {
+  content:"";
+  display: block;
+  clear: both;
+}
+/* Content that is after closed section (div class float) will be styled
+as the rest of my page, in the center. This elemet basically cancels the float settings.*/
+img {
+  padding: 30px 20px;
+  width: 93%;
+}
+/* Here I set the framing box of 30px and 20px around all pictures and
+made them 93% of their original size.*/
+.mainsection {
+  margin: 0px;
+  padding: 0px;
+  text-align: center
+}
+/* The main section is having no framing and sits in the center.*/
+.container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+/* In this element I focused on animated menu. Links have framing of 20px in total
+and they sit in the center.*/
+
+li {
+  display: inline-block;
+}
+/* Menu links are displayed next to each other.*/
+
+li a {
+  text-decoration: none;
+  display: inline-block;
+  color: khaki;
+  font-family: Helvetica; sans-serif; Arial
+  font-weight: 25px;
+  padding: 0 30px;
+}
+/* Menu links have no decoration, they are next to each other. Here I put
+the display inline block element again to make the animated line underneath exactly
+at the right position where the text is. Color is khaki, 3 fonts if any of them is
+not working, boldness of font is 25px and framing 30px.*/
+.cool-link::after {
+  content:'';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background:gold;
+  transition: width .3s
+}
+/*Here is the animated link that appears under the menu buttons. It has size
+of 2px, gold color and hover under the text for 3 seconds.*/
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 3s;
+}
+/* After the animation of the link is over, it stayes under the text. That's why
+it has 100% width.*/
+video{
+  font-family: Apple Chancery; cursive;
+}
+/*This font appears instead of the video, if it is not playable.*/
+footer {
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: black;
+}
+/*Last setting in css of my footer. It has black background same as header. It sits
+in the center of the page and has frames of 30px all together on every side.*/

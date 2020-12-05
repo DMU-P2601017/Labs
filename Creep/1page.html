@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--Every html page starts with html element.-->
+  <head>
+    <!-- Every html should have 2 main sections - head and body. Head is used
+    for details before writing content. So for example settings, linking the page
+    to css and title.-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <!--This element allows my website be mobile friendly.-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- Here I am linking my css stylesheet to my page.-->
+    <title>CREEP</title>
+    <!--Title of the page will be visible for viewers on the tab in the browser.-->
+  </head>
+  <body>
+    <!-- Body element cotains the main content of the page.-->
+    <header>
+      <!-- Header is the section, where the main heading usually is and it is the most
+      upper part of the page. It usually describes what the website is about.-->
+      <img src="image/title.png" alt="CREEP" />
+      <!-- Here I decided to put a picture with the name of the movie instead of the
+    heading as I think it looks nice rather than big heading. I'm sourcing one of my folders
+  for images. I will do it like this with most of the internal linking, when I will source my
+audio, video and images. "Alt" element is here for alternative description if the picture won't
+  appear on the page.-->
+    </header>
+    <nav>
+    <div class="container">
+      <li><a href="1page.html" class="cool-link">ABOUT</a></li>
+      <li><a href="2page.html" class="cool-link">CAST</a></li>
+        <!--I'm choosing animated menu to make my website more modern and proffesional, I
+      was inspired by one of the videos on youtube, but I customized it, put different colors
+      in and made it simpler. I put my menu in nav element, as it is content with links and
+      in div class element called container to seperate the menu from rest of the content on my page. Thanks
+    to this div class I can style in in css later on. I am also using ABOUT and CAST as buttons
+  to link to my 2 page and home page in <a> element.-->
+    </div>
+  </nav>
+    <div class="mainsection">
+      <!-- Here again I named this section as "mainsection" as it contains the main content of
+      my page including synopsis for the film. Thanks to this div element, I could set
+      different styles in css for this section.-->
+    <h2>SYNOPSIS</h2>
+    <!-- Here I chose heading2, which is the second most bigger one.-->
+      <p>
+      Meet Aaron, the videographer, who replied to an internet ad to film with a stranger, Josef,
+      a movie. After Aaron arrives to his house, Josef agrees to make a documentary for his
+      unborn child, as he suffers from cancer and doesn't know how long he will still live.
+      Josef's requests are getting more bizzare and weird after certain amount of time and
+      Aaron is questioning his true intentions.
+      <!-- P element is used for text. If the new paragraph starts, we should end this element and
+      put another p element after that.-->
+    </p>
+    </div>
+      <h2>TRAILER</h2>
+    <center>
+      <!-- I'm putting my video in the center of the screen as it looks better in my opinion and
+    will be in center with rest of my text.-->
+      <video controls="true" height="70%" width="70%" poster="image/creep poster1.jpg">
+        <!--Putting a poster there was quite complicated for me, as I had to take a print screen
+        of the video, which I stopped at certain time and created poster from it. I
+      had to set up proper width and height of this video to make it look good. I also had
+      to put controls to it for viewers to be able to play and pause the video.-->
+        <source src="video/creep trailer.mp4" type="video/mp4"/>
+        <source src="video/creep trailer.ogg" type="video/ogg"/>
+        <!-- Here I sourced 2 videos from my folders, one in mp4 which should work on every platform
+        and in every browser and alternative ogg format, if the mp4 won't work.-->
+      <p>Apologies if your brower doesn't support this video, you can download the video
+        <a href="video/creep trailer.mp4">here</a> or you can
+          watch the original <a href="https://www.youtube.com/watch?v=o2y8kKsxeII">here</a>.
+          <!--Fallback if the video is not working on my page. I thought it would be nice to also include the original video from
+          youtube than just let the person download it from my page. First link is internal,
+          so it referes to one of my folders and other one is external, which referes to link
+          "outside" of my document.-->
+      </p>
+      </video>
+    </center>
+  <footer>
+    <!-- Footer is the last section on the page, so it is located on the bottom.
+    It cotains internal links, external link and some information.-->
+    <a href=1page.html>HOME</a>
+    <a href=2page.html>CAST</a>
+    <!--Here I put internal links to my pages, same as in nav section to make it for
+    viewers more organized-->
+    <p> "Weird, scary, fun.. what is it not to like? ~ MarcoLara"</p>
+    <p>"Terrifying in the most realistic sence ~ jackgdemoss" </p>
+    <p>Find more information, pictures and reviews about the movie on
+      <a href="https://www.imdb.com/title/tt2428170/?ref_=tt_urv"> IMDB website</a>.
+      <!--I thought it would be good idea to include this external link as the reviews and most of
+      the information about this movie and cast is specifically from this website.-->
+    <p> Made by : Media Production 1st year student Lucie Smejkalova; P2601017;
+      TECH1015 </p>
+  </footer>
+  </body>
+</html>
